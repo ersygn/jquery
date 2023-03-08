@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas No 3 jquery</title>
+    <style>
+        div{
+            width: 120px;
+            height: 90px;
+            background-color: yellow;
+            margin-top: 10px;
+            border: solid 3px black;
+        }
+    </style>
+</head>
+<body> 
+    <button class="fadeout">Fade out</button>
+    <button class="fadein">Fade in</button>
+    <button class="fadeto">Fade to 0.3</button>
+ 
+    <div></div>
+ 
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function (){
+            $(".fadeout").click(function (){ 
+               $("div").fadeOut(); 
+            });
+ 
+            $(".fadein").click(function (){ 
+               $("div").fadeIn(); 
+            });
+ 
+            $(".fadeto").click(function () { 
+               $("div").fadeTo("slow", 0.3); 
+            });
+        });
+    </script>    
+</body>
+</html>

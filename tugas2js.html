@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Tugas 2 jquery</title>
+  <h4>Klik 2x pada setiap kotak untuk mengubah warnanya</h4>
+  <style>
+  div {
+    background: yellow;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border:solid 3px black;
+    margin: 10px;
+    float: left;
+ }
+
+  div.dbl {
+    background: red;
+    color: black;
+    border:solid 3px black;
+    display: flex;
+  }
+
+  div.db2 {
+    background: red;
+    color: black;
+    border:solid 3px black;
+    display: flex;
+  }
+  div.db3 {
+    background: red;
+    color: black;
+    border:solid 3px black;
+    display: flex;
+  }
+  div.db4 {
+    background: red;
+    color: black;
+    border:solid 3px black;
+    display: flex;
+  }
+  </style>
+</head>
+<body>
+
+<div class="kotak1"> </div>
+<div class="kotak2"> </div>
+<div class="kotak3"> </div>
+<div class="kotak4"> </div>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+
+var divdbl = $(".kotak1").ready(function(){
+    divdbl.dblclick(function() {
+    divdbl.toggleClass( "dbl" );
+    });
+});
+
+var divdb2 = $(".kotak2").ready(function(){
+    divdb2.dblclick(function() {
+    divdb2.toggleClass( "db2" );
+    });
+});
+var divdb3 = $(".kotak3").ready(function(){
+    divdb3.dblclick(function() {
+    divdb3.toggleClass( "db3" );
+    });
+});
+var divdb4 = $(".kotak4").ready(function(){
+    divdb4.dblclick(function() {
+    divdb4.toggleClass( "db4" );
+    });
+});
+</script>
+</body>
+</html>
